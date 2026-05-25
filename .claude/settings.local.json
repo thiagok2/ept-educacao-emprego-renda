@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "mcp__postgres__query",
+      "Bash(export *)",
+      "Bash(head *)",
+      "Bash(wc *)",
+      "Bash(file *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(mv *)",
+      "Bash(rmdir *)",
+      "Bash(nslookup *)",
+      "Bash(ping *)",
+      "Write(/tmp/*)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "postgres"
+  ]
+}

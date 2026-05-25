@@ -1,0 +1,10 @@
+.env
+.mcp.json
+
+# Dados brutos das fontes (volume alto)
+dados-fonte/nilo/*.csv
+dados-fonte/nilo/*.xlsx
+dados-fonte/inep/*.csv
+dados-fonte/inep/*.xlsx
+dados-fonte/observatorio/*.csv
+dados-fonte/observatorio/*.xlsx
