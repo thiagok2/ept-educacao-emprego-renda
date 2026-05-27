@@ -1,5 +1,7 @@
 .env
 .mcp.json
+.env.local
+node_modules/
 
 # Dados brutos das fontes (volume alto)
 dados-fonte/nilo/*.csv

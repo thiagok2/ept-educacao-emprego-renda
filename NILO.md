@@ -40,3 +40,29 @@ Cada tabela é criada pela skill `/nilo-loader` no schema `staging` e representa
 | num_vagas | INTEGER | Vagas disponibilizadas para a fase inicial via processo seletivo, SISU, etc. |
 | matricula_equivalente_geral | TEXT | Matrícula ponderada pelos fatores de equiparação de carga horária e esforço de curso. TEXT pois usa vírgula como decimal na fonte |
 | carregado_em | TIMESTAMP | Data e hora da carga do CSV |
+
+## stg_nilo_situacao_matricula
+
+**Schema:** `staging`
+**Fonte:** Plataforma Nilo Peçanha — arquivo `SituacaoMatricula.csv`
+**Documentação:** `dados-fonte/nilo/SituacaoMatricula.pdf` (presente)
+**Linhas carregadas:** 36.237
+**Cobertura temporal:** 2024 – 2024
+**Última carga:** 2026-05-27
+
+| Coluna | Tipo | Descrição |
+|--------|------|-----------|
+| id | SERIAL | Chave surrogate gerada na carga |
+| ano | INTEGER | Ano de referência |
+| regiao | TEXT | Região do Brasil |
+| uf | VARCHAR(2) | Unidade Federativa |
+| estado | TEXT | Estado do Brasil |
+| organizacao_academica_pnp | TEXT | Organização acadêmica conforme PNP |
+| instituicao | TEXT | Sigla da instituição |
+| instituicao_nome | TEXT | Nome completo da instituição |
+| nome_unidade_recente | TEXT | Nome da unidade recente |
+| categoria_situacao | TEXT | Categoria da situação do aluno |
+| nome_situacao | TEXT | Descrição da situação de matrícula |
+| fluxo_retido | TEXT | Fluxo retido associado à situação |
+| numero_de_matriculas | INTEGER | Número de matrículas para a combinação de situação |
+| carregado_em | TIMESTAMP | Data e hora da carga do CSV |
