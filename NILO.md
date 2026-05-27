@@ -66,3 +66,34 @@ Cada tabela é criada pela skill `/nilo-loader` no schema `staging` e representa
 | fluxo_retido | TEXT | Fluxo retido associado à situação |
 | numero_de_matriculas | INTEGER | Número de matrículas para a combinação de situação |
 | carregado_em | TIMESTAMP | Data e hora da carga do CSV |
+
+## stg_nilo_cassificacao_racial_renda_sexo
+
+**Schema:** `staging`
+**Fonte:** Plataforma Nilo Peçanha — arquivo `CassificacaoRacialRendaSexo.csv`
+**Documentação:** `dados-fonte/nilo/CassificacaoRacialRendaSexo.pdf` (presente)
+**Linhas carregadas:** 213.776
+**Cobertura temporal:** 2017 – 2024 (8 anos)
+**Instituições representadas:** 56
+**Regiões representadas:** 5
+**Última carga:** 2026-05-27
+
+| Coluna | Tipo | Descrição |
+|--------|------|-----------|
+| id | SERIAL | Chave surrogate gerada na carga |
+| ano | INTEGER | Ano de referência dos dados |
+| regiao | VARCHAR(50) | Nome da região do Brasil em que a Instituição está situada |
+| uf | VARCHAR(2) | Unidade Federativa (UF) da Instituição |
+| estado | VARCHAR(50) | Nome do estado do Brasil em que a Instituição está situada |
+| organizacao_academica_pnp | VARCHAR(50) | Designação da organização acadêmica (IF, Cefet, ETV, CPII) |
+| instituicao | VARCHAR(50) | Código ou sigla da instituição |
+| instituicao_nome | TEXT | Nome oficial da Instituição de Ensino Superior |
+| cor_raca | VARCHAR(50) | Cor/Raça do aluno (Amarela, Branca, Indígena, Parda, Preta, Não Declarada) |
+| renda_familiar | VARCHAR(50) | Faixa de renda per capita familiar em salários-mínimos |
+| faixa_etaria | VARCHAR(50) | Faixa etária do aluno |
+| sexo | VARCHAR(50) | Sexo do aluno (Masculino, Feminino, Outro) |
+| numero_concluintes | INTEGER | Quantidade de alunos que concluíram o curso no período |
+| numero_ingressantes | INTEGER | Quantidade de alunos que ingressaram no curso no período |
+| numero_matriculas | INTEGER | Quantidade total de matrículas ativas no período |
+| numero_vagas | INTEGER | Quantidade de vagas oferecidas pelo curso no período |
+| carregado_em | TIMESTAMP | Data e hora da carga do CSV |
