@@ -7,6 +7,15 @@ SELECT * FROM staging.stg_nilo_situacao_matricula;--por campus --encontrar a rel
 
 SELECT * FROM staging.stg_nilo_panorama_orcamentario-- pesqusar relacao_do_orgao(Órgão da UO, Órgão da UGE) - avaliar remover e ficar apenas com uma
 ```
-2. 
+2. Consolidar em pares as tabelas de mesma granularidade, como exemplo, fato_curso_matricula_oferta e fato_curso_taxa_evasao.
+
+staging.fato_instituicao_orcamentario
+staging.fato_instituicao_demografia
+staging.fato_instituicao_servidores
+
+Para otimizar o desempenho e facilitar a análise dos dados.
+
+
+
 
 
