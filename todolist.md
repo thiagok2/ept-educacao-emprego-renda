@@ -5,7 +5,7 @@ resolver o problema de duplicidade de dados na tabela staging.stg_nilo_situacao_
 ```sql
 SELECT * FROM staging.stg_nilo_situacao_matricula;--por campus --encontrar a relacao entre: categoria_situacao, nome_situacao, fluxo_retido
 
-SELECT * FROM staging.stg_nilo_panorama_orcamentario-- pesqusar relacao_do_orgao(Órgão da UO, Órgão da UGE) - avaliar remover e ficar apenas com uma
+SELECT * FROM staging.stg_nilo_panorama_orcamentario-- pesqusar relacao_do_orgao(Órgão da UO, Órgão da UGE) - avaliar remover e ficar apenas com uma --ORGÃO UO = ORÇAMENTO PLANEJADO PELO MINISTERIO DA EDUCAÇÃO-- --ORGÃO UGE = UNIDADE GERENCIADORA, BASICAMENTE OS VALORES QUE FORAM RECEBIDOS, E APLICADOS, EM RESUMO O VALOR REAL QUE RECEBEU, GASTOU, SOBROU.
 ```
 2. Consolidar em pares as tabelas de mesma granularidade, como exemplo, fato_curso_matricula_oferta e fato_curso_taxa_evasao.
 
