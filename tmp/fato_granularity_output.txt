@@ -1,0 +1,42 @@
+
+TABLE: fato_curso_matricula_oferta
+TOTAL ROWS: 295438
+  DISTINCT(ano, instituicao, nome_unidade_recente, nome_id_curso, tipo_oferta, modalidade_ensino): 74620
+  DISTINCT(ano, instituicao, nome_id_curso, tipo_oferta, modalidade_ensino): 42950
+
+TABLE: fato_curso_taxa_evasao
+TOTAL ROWS: 93420
+  DISTINCT(ano, instituicao, nome_unidade_recente, nome_curso, tipo_oferta, turno_curso): 92608
+  DISTINCT(ano, instituicao, nome_curso, tipo_oferta, turno_curso): 59722
+
+TABLE: fato_instituicao_demografia
+TOTAL ROWS: 213776
+  DISTINCT(ano, instituicao, cor_raca, renda_familiar, faixa_etaria, sexo): 213776
+
+TABLE: fato_instituicao_orcamentario
+TOTAL ROWS: 4615
+  DISTINCT(ano, instituicao, relacao_do_orgao): 1066
+  SAMPLE relacao_do_orgao values:
+    Órgão da UGE (2476)
+    Órgão da UO (2139)
+
+TABLE: fato_instituicao_servidores
+TOTAL ROWS: 340
+  DISTINCT(ano, instituicao): 328
+
+TABLE: fato_unidade_indicadores
+TOTAL ROWS: 5120
+  DISTINCT(ano, instituicao, nome_unidade_recente): 5120
+
+TABLE: fato_unidade_situacao_matricula
+TOTAL ROWS: 36237
+  DISTINCT(ano, instituicao, nome_unidade_recente, categoria_situacao, nome_situacao, fluxo_retido): 36237
+
+--- PNP SOURCE DUPLICATION CHECKS ---
+
+CHECK: stg_nilo_panorama_orcamentario duplicates by year/instituicao/relacao_do_orgao
+{"rows":"4615","uniq":"1066"}
+
+CHECK: stg_nilo_panorama_orcamentario relacao_do_orgao distinct
+{"relacao_do_orgao":"Órgão da UGE","cnt":"2476"}
+{"relacao_do_orgao":"Órgão da UO","cnt":"2139"}
