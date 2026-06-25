@@ -1,0 +1,1229 @@
+﻿{
+  "generated_at": "2026-06-25T04:39:17.448Z",
+  "report": [
+    {
+      "schema": "dw",
+      "table": "dw_ept_curso_ano",
+      "rowCount": 42950,
+      "columns": [
+        {
+          "column_name": "dw_ept_curso_ano_sk",
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "column_default": "nextval('dw.dw_ept_curso_ano_dw_ept_curso_ano_sk_seq'::regclass)"
+        },
+        {
+          "column_name": "ano_referencia",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao",
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao_nome",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "nome_id_curso",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "tipo_curso",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "tipo_oferta",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "modalidade_ensino",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "num_cursos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "num_concluintes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "num_ingressantes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "num_inscritos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "num_matriculas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "num_vagas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_cursos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_concluintes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_ingressantes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_inscritos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_matriculas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_vagas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matricula_equivalente_geral",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fonte_dados",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "data_carga",
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "lote_carga",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        }
+      ],
+      "pkCols": [
+        "dw_ept_curso_ano_sk"
+      ],
+      "uniques": [
+        [
+          "ano_referencia",
+          "instituicao",
+          "nome_id_curso",
+          "tipo_oferta",
+          "modalidade_ensino"
+        ]
+      ],
+      "nulls": {
+        "dw_ept_curso_ano_sk": 0,
+        "ano_referencia": 0,
+        "instituicao": 0,
+        "instituicao_nome": 0,
+        "nome_id_curso": 0,
+        "tipo_curso": 0,
+        "num_cursos": 0,
+        "num_concluintes": 0,
+        "num_ingressantes": 0,
+        "num_inscritos": 0,
+        "num_matriculas": 0,
+        "num_vagas": 0,
+        "numero_de_cursos": 0,
+        "numero_de_concluintes": 8382,
+        "numero_de_ingressantes": 7255,
+        "numero_de_inscritos": 8353,
+        "numero_de_matriculas": 0,
+        "numero_de_vagas": 8409,
+        "matricula_equivalente_geral": 466,
+        "fonte_dados": 0,
+        "data_carga": 0,
+        "lote_carga": 0
+      },
+      "orphanCounts": [],
+      "fatoTable": null,
+      "fatoCount": null,
+      "volumeConsistency": "N/A",
+      "coEsferaIssue": null,
+      "duplicateInfo": 0
+    },
+    {
+      "schema": "dw",
+      "table": "dw_ept_curso_periodo",
+      "rowCount": 92608,
+      "columns": [
+        {
+          "column_name": "dw_ept_curso_periodo_sk",
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "column_default": "nextval('dw.dw_ept_curso_periodo_dw_ept_curso_periodo_sk_seq'::regclass)"
+        },
+        {
+          "column_name": "ano_referencia",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao",
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao_nome",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "nome_unidade_recente",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "nome_curso",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "tipo_curso",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "tipo_eixo_tecnologico",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "subeixo_tecnologico",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "tipo_oferta",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "turno_curso",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "modalidade_ensino",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "nome_fonte_financiamento",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_matriculas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matriculas_numero_de_evadidos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matriculas_taxa_de_evasao_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fonte_dados",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "data_carga",
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "lote_carga",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        }
+      ],
+      "pkCols": [
+        "dw_ept_curso_periodo_sk"
+      ],
+      "uniques": [
+        [
+          "ano_referencia",
+          "instituicao",
+          "nome_unidade_recente",
+          "nome_curso",
+          "tipo_oferta",
+          "turno_curso"
+        ]
+      ],
+      "nulls": {
+        "dw_ept_curso_periodo_sk": 0,
+        "ano_referencia": 0,
+        "instituicao": 0,
+        "instituicao_nome": 0,
+        "nome_unidade_recente": 0,
+        "nome_curso": 0,
+        "tipo_curso": 0,
+        "turno_curso": 0,
+        "numero_de_matriculas": 0,
+        "matriculas_numero_de_evadidos": 0,
+        "matriculas_taxa_de_evasao_percentual": 0,
+        "fonte_dados": 0,
+        "data_carga": 0,
+        "lote_carga": 0
+      },
+      "orphanCounts": [],
+      "fatoTable": null,
+      "fatoCount": null,
+      "volumeConsistency": "N/A",
+      "coEsferaIssue": null,
+      "duplicateInfo": 0
+    },
+    {
+      "schema": "dw",
+      "table": "dw_ept_instituicao_ano",
+      "rowCount": 328,
+      "columns": [
+        {
+          "column_name": "dw_ept_instituicao_ano_sk",
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "column_default": "nextval('dw.dw_ept_instituicao_ano_dw_ept_instituicao_ano_sk_seq'::regclass)"
+        },
+        {
+          "column_name": "ano_referencia",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao",
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao_nome",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "regiao",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "uf",
+          "data_type": "character varying",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "estado",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "organizacao_academica_pnp",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "servidores_total",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_numero_total",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "servidores_docente_efetivo",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "servidores_numero_de_servidores",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_doutorado_40h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_doutorado_20h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_doutorado_de",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_mestrado_40h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_mestrado_20h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_mestrado_de",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_especializacao_40h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_especializacao_20h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_especializacao_de",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_graduacao_40h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_graduacao_20h",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "docentes_graduacao_de",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "tecnicos_ensino_medio",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "tecnicos_superior",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "tecnicos_alfabetizado",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fonte_dados",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "data_carga",
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "lote_carga",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        }
+      ],
+      "pkCols": [
+        "dw_ept_instituicao_ano_sk"
+      ],
+      "uniques": [
+        [
+          "ano_referencia",
+          "instituicao"
+        ]
+      ],
+      "nulls": {
+        "dw_ept_instituicao_ano_sk": 0,
+        "ano_referencia": 0,
+        "instituicao": 0,
+        "instituicao_nome": 0,
+        "docentes_numero_total": 0,
+        "servidores_numero_de_servidores": 0,
+        "fonte_dados": 0,
+        "data_carga": 0,
+        "lote_carga": 0
+      },
+      "orphanCounts": [],
+      "fatoTable": null,
+      "fatoCount": null,
+      "volumeConsistency": "N/A",
+      "coEsferaIssue": null,
+      "duplicateInfo": 0
+    },
+    {
+      "schema": "dw",
+      "table": "dw_ept_instituicao_demografia",
+      "rowCount": 213776,
+      "columns": [
+        {
+          "column_name": "dw_ept_instituicao_demografia_sk",
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "column_default": "nextval('dw.dw_ept_instituicao_demografia_dw_ept_instituicao_demografia_seq'::regclass)"
+        },
+        {
+          "column_name": "ano_referencia",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao",
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao_nome",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "regiao",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "uf",
+          "data_type": "character varying",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "estado",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "organizacao_academica_pnp",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "cor_raca",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "renda_familiar",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "faixa_etaria",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "sexo",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_concluintes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_ingressantes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_matriculas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_vagas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fonte_dados",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "data_carga",
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "lote_carga",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        }
+      ],
+      "pkCols": [
+        "dw_ept_instituicao_demografia_sk"
+      ],
+      "uniques": [
+        [
+          "ano_referencia",
+          "instituicao",
+          "cor_raca",
+          "renda_familiar",
+          "faixa_etaria",
+          "sexo"
+        ]
+      ],
+      "nulls": {
+        "dw_ept_instituicao_demografia_sk": 0,
+        "ano_referencia": 0,
+        "instituicao": 0,
+        "instituicao_nome": 0,
+        "numero_concluintes": 0,
+        "numero_ingressantes": 0,
+        "numero_matriculas": 0,
+        "numero_vagas": 0,
+        "fonte_dados": 0,
+        "data_carga": 0,
+        "lote_carga": 0
+      },
+      "orphanCounts": [],
+      "fatoTable": "staging.fato_instituicao_demografia",
+      "fatoCount": 213776,
+      "volumeConsistency": "OK",
+      "coEsferaIssue": null,
+      "duplicateInfo": 0
+    },
+    {
+      "schema": "dw",
+      "table": "dw_ept_orcamentario_uge_ano",
+      "rowCount": 533,
+      "columns": [
+        {
+          "column_name": "dw_ept_orcamentario_uge_ano_sk",
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "column_default": "nextval('dw.dw_ept_orcamentario_uge_ano_dw_ept_orcamentario_uge_ano_sk_seq'::regclass)"
+        },
+        {
+          "column_name": "ano_referencia",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao",
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao_nome",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "relacao_do_orgao",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "orgao_uge",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fonte_dados",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "dotacao_atualizada",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "despesa_empenhada",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "despesa_liquidada",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "despesa_paga",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "despesa_liq_rp",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "despesa_empenhada_a_liquidar",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "credito_disponivel",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "data_carga",
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "lote_carga",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        }
+      ],
+      "pkCols": [
+        "dw_ept_orcamentario_uge_ano_sk"
+      ],
+      "uniques": [
+        [
+          "ano_referencia",
+          "instituicao",
+          "relacao_do_orgao"
+        ]
+      ],
+      "nulls": {
+        "dw_ept_orcamentario_uge_ano_sk": 0,
+        "ano_referencia": 0,
+        "instituicao": 0,
+        "instituicao_nome": 0,
+        "fonte_dados": 0,
+        "data_carga": 0,
+        "lote_carga": 0
+      },
+      "orphanCounts": [],
+      "fatoTable": null,
+      "fatoCount": null,
+      "volumeConsistency": "N/A",
+      "coEsferaIssue": {
+        "column": "orgao_uge",
+        "count": 533
+      },
+      "duplicateInfo": 0
+    },
+    {
+      "schema": "dw",
+      "table": "dw_ept_unidade_ano",
+      "rowCount": 5120,
+      "columns": [
+        {
+          "column_name": "dw_ept_unidade_ano_sk",
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "column_default": "nextval('dw.dw_ept_unidade_ano_dw_ept_unidade_ano_sk_seq'::regclass)"
+        },
+        {
+          "column_name": "ano_referencia",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao",
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "instituicao_nome",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "nome_unidade_recente",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "regiao",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "uf",
+          "data_type": "character varying",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "estado",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "organizacao_academica_pnp",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_concluidos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_concluidos_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_indice_eficiencia_academica_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_numero_de_evadidos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_retidos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_retidos_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "eficiencia_academica_taxa_de_evasao_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "indice_verticalizacao_vagas_cg",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "indice_verticalizacao_vagas_ct",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "indice_verticalizacao_vagas_pg",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "indice_verticalizacao_vagas_qp",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "indice_verticalizacao_eixo_tecnologico",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "oferta_de_vagas_curso_noturno",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "oferta_de_vagas_curso_noturno_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "oferta_de_vagas_graduacao",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matricula_equivalente_formacao_de_professores",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matricula_equivalente_tecnicos",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matricula_equivalente_proeja",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "matricula_equivalente_geral",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "rap_rap",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "rap_matriculas_rap",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "rap_professor_equivalente",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_inscritos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "numero_de_vagas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "relacao_inscrito_vaga",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "reserva_cota_vagas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "vagas_regulares_cota_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "reserva_ampla_concorrencia_vagas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "vagas_regulares_ampla_concorrencia_percentual",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_em_curso",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_concluintes",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_evadidos",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_desligada",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_abandono",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_transf_externa",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_integralizada",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_reprovado",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_cancelada",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_transf_interna",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fluxo_retido_em_fluxo",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fluxo_retido_retido",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "situacao_total_matriculas",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "column_name": "fonte_dados",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "data_carga",
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "column_name": "lote_carga",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        }
+      ],
+      "pkCols": [
+        "dw_ept_unidade_ano_sk"
+      ],
+      "uniques": [
+        [
+          "ano_referencia",
+          "instituicao",
+          "nome_unidade_recente"
+        ]
+      ],
+      "nulls": {
+        "dw_ept_unidade_ano_sk": 0,
+        "ano_referencia": 0,
+        "instituicao": 0,
+        "instituicao_nome": 0,
+        "nome_unidade_recente": 0,
+        "eficiencia_academica_numero_de_evadidos": 0,
+        "indice_verticalizacao_vagas_cg": 0,
+        "indice_verticalizacao_vagas_ct": 0,
+        "indice_verticalizacao_vagas_pg": 0,
+        "indice_verticalizacao_vagas_qp": 0,
+        "oferta_de_vagas_curso_noturno": 0,
+        "oferta_de_vagas_curso_noturno_percentual": 0,
+        "oferta_de_vagas_graduacao": 0,
+        "matricula_equivalente_formacao_de_professores": 0,
+        "matricula_equivalente_tecnicos": 0,
+        "matricula_equivalente_proeja": 0,
+        "matricula_equivalente_geral": 0,
+        "rap_matriculas_rap": 0,
+        "numero_de_inscritos": 0,
+        "numero_de_vagas": 0,
+        "reserva_cota_vagas": 0,
+        "vagas_regulares_cota_percentual": 0,
+        "reserva_ampla_concorrencia_vagas": 0,
+        "vagas_regulares_ampla_concorrencia_percentual": 0,
+        "situacao_em_curso": 0,
+        "situacao_total_matriculas": 0,
+        "fonte_dados": 0,
+        "data_carga": 0,
+        "lote_carga": 0
+      },
+      "orphanCounts": [],
+      "fatoTable": null,
+      "fatoCount": null,
+      "volumeConsistency": "N/A",
+      "coEsferaIssue": null,
+      "duplicateInfo": 0
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+const fs=require('fs');const s=fs.readFileSync('tmp/dw_readiness_report.json');console.log('encoding_check', s.slice(0,4));console.log(s.toString('utf8').slice(0,200));
